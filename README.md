@@ -1,2 +1,2 @@
-# Datmin-22052025
-perkuliahan data mining
+# Proyek_Datmin
+proyek data mining
