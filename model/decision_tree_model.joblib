@@ -1,1 +1,14 @@
+# create_decision_tree_model_joblib.py
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+import joblib
+
+iris = load_iris()
+X_train, _, y_train, _ = train_test_split(iris.data, iris.target, random_state=0)
+
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+
+joblib.dump(model, 'decision_tree_model.joblib')
 
