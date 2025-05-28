@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as pd
+import kagglehub
 import pickle
 import joblib
 import seaborn as sns
@@ -8,8 +8,9 @@ st.set_page_config(page_title="Iris Dasboard App", layout="centered")
 st.sidebar.header("Dashboard")
 st.title("Selamat Datang di Aplikasi Proyek Data Mining")
 st.write("Ini adalah aplikasi Streamlit pertamaku")
-#load dataset
-df = pd.read_csv("model/iris.csv")
+# Download latest version
+path = kagglehub.dataset_download("himanshunakrani/iris-dataset")
+print("Path to dataset files:", path)
 #Tampilkan dataframe
 st.subheader("Dataset iris")
 st.dataframe(df)
