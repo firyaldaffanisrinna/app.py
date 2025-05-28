@@ -1,1 +1,15 @@
+# create_logistic_regression_model.py
+from sklearn.datasets import load_iris
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+import pickle
+
+iris = load_iris()
+X_train, _, y_train, _ = train_test_split(iris.data, iris.target, random_state=0)
+
+model = LogisticRegression(max_iter=200)
+model.fit(X_train, y_train)
+
+with open('logistic_regression_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
 
