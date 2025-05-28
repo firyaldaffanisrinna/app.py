@@ -23,7 +23,7 @@ fig, ax = plt.subplots(figsize=(6,4))
 sns.barplot(x=class_counts.index,y=class_counts.values,palette=["red","green","yellow"],ax=ax)
 ax.set_ylabel("jumlah data")
 ax.set_xlabel("varietas")
-ax.set_title(distribusi kelas iris")
+ax.set_title("distribusi kelas iris")
 st.pyplot(fig)
 #korelasi fitur
 st.subheader("Korelasi antar fitur dalam dataset")
