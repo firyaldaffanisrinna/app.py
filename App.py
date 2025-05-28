@@ -28,6 +28,4 @@ st.pyplot(fig)
 #korelasi fitur
 st.subheader("Korelasi antar fitur dalam dataset")
 #Input interaktif
-name = st.text_input("siapa nama anda?")
-                     if name:
-                     st.success(f"Halo, {name}!")
+
