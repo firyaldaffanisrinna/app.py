@@ -1,6 +1,6 @@
-streamlit
+streamlit>=1.30
 pandas
-seaborn
 matplotlib
+seaborn
 scikit-learn
 joblib
